@@ -1,0 +1,356 @@
+button{
+    border-radius: 5px;
+}
+
+#logo{
+width: 50px;
+height: 50px;
+margin-left: 20px;
+
+
+}
+/* color button */
+
+.colordropdown {
+    position: relative;
+    right: 50px;
+    
+    }
+    .fontdropdown {
+        position: relative;
+        right: 30px;
+        
+        }
+    
+    
+
+/* Ensure the body and HTML take the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Main page container takes full viewport height and uses flexbox */
+.page-container {
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Ensure the main content grows to take available space */
+main {
+    flex-grow: 1;
+    margin-top: 50px; /* Adjust this value to control the vertical positioning */
+}
+
+
+/* Footer background color */
+footer {
+    background-color: #212529;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* This will push the footer to the bottom */
+}
+.footer-bg {
+    background-color: rgb(68, 68, 68);
+}
+
+/* Optional: Padding for the content below the navbar */
+.content {
+    padding-top: 100px;
+}
+
+/* Form Styles */
+.container {
+    background-image: url('https://example.com/gym-background.jpg'); /* Add actual gym background image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #212529;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+
+.form-group input[type="date"] {
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    width: 48%;
+}
+
+button {
+    background-color: #ff00cc;
+    padding: 15px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;  /* Make buttons inline */
+    margin-right: 10px;     /* Add space between buttons */
+}
+
+button:hover {
+    background-color: #e600b3;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #ff00cc;
+}
+
+
+
+
+/* calculatr style  */
+
+.formcal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+
+}
+
+.calculator {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#cal {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cal:hover {
+    background-color: #666;
+}
+
+#cal:nth-child(4n) {
+    background-color: #ff00cc;
+}
+
+#cal:nth-child(4n):hover {
+    background-color: #ff00cc;
+}
+
+#cal:nth-child(3n):hover {
+    background-color: #E74C3C;
+}
+
+#cal:nth-child(2n):hover {
+    background-color: #666;
+}
+
+  /* /////////////////////////////start farah css ///////////////////////////////////////////// */
+ 
+/* Apply box-sizing border-box globally */
+* {
+    box-sizing: border-box;
+}
+
+.todo {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main content */
+.containertodo {
+    max-width: 600px; /* Maximum width of the container */
+    margin: 40px auto; /* Center the container with vertical margin */
+    padding: 20px;
+    background: #212529; /* White background for the container */
+    border-radius: 10px; /* Slightly larger border radius for a rounded effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for a floating effect */
+}
+
+
+
+
+
+/* Main heading styles */
+/*h1 {
+    text-align: center;
+    color: #444; /* Slightly lighter grey for the heading */
+   /* margin-bottom: 20px;}/* Space below the heading */
+/*
+
+/* Input and button container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.containertodo h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+}
+
+/* Styles for the task input field */
+#taskInput {
+    flex: 1; /* Allow input to take up available space */
+    padding: 12px; /* Increased padding for better user experience */
+    font-size: 16px; /* Font size for the input text */
+    border: 2px solid #ccc; /* Light grey border for the input */
+    border-radius: 6px; /* Slightly rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Base button styles */
+button {
+    padding: 12px 20px; /* Increased padding for better button appearance */
+    font-size: 16px;
+    border: none;
+    border-radius: 6px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for all buttons */
+button:hover {
+    opacity: 0.9; /* Slightly faded effect on hover */
+}
+
+/* Styles for the add task button */
+button.add-task {
+    background-color: #ff00cc; /* Green color for add button */
+    margin: 10px;
+}
+
+button.add-task:hover {
+    background-color: #e600b3; /* Darker green for hover effect */
+}
+
+/* Styles for the clear tasks button */
+button.clear-tasks {
+    background-color: #ff00cc; /* Red color for clear button */
+}
+
+button.clear-tasks:hover {
+    background-color: #e600b3; /* Darker red for hover effect */
+}
+
+/* Task list styling */
+#taskList {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+/* Styles for individual task items */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; /* Increased padding for better spacing */
+    margin-bottom: 12px; /* Space between tasks */
+    border: 1px solid #efe8e8; /* Light border around tasks */
+    border-radius: 8px; /* Rounded corners for tasks */
+    background-color: #e6dddd; /* Very light grey background for tasks */
+    box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1); /* Slightly deeper shadow */
+}
+
+/* Task text styling */
+.task-item span {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Styles for delete buttons within task items */
+.task-item button {
+    background-color: #f83a2c; /* Red color for delete button */
+    padding: 8px 16px; /* Increased padding for better button appearance */
+    font-size: 14px;
+    border-radius: 5px; /* Slightly rounded corners for the button */
+}
+
+.task-item button:hover {
+    background-color: #6c0404; /* Darker red for hover effect */
+}
+
+
+ /* /////////////////////////////start farah css ///////////////////////////////////////////// */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Navbar Example</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+</head>
+<body>
+
+
+    <!-- Main container to hold the navbar, content, and footer -->
+    <div class="page-container">
+        <!-- Navbar -->
+        <nav  class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" style="font-size: 24px;" >Gym</a>
+                <img id="logo" src="../img/logo2.svg" alt="logo" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Centering the navigation links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="todo.html">To-Do</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="../calculator/calculator.html">Calculator</a>
+                        </li>
+                    </ul>
+                
+           
+        
+<!-- ///////////////////////////////color and font button ////////////////////////////////-->
+<div class="style-controls"></div>
+    <label for="bgColor">Background Color:</label>
+    <input type="color" id="bgColor">
+    
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor">
+    
+    <label for="fontFamily">Font Family:</label>
+    <select id="fontFamily">
+        <option value="">Default</option>
+        <option value="Cursive">Cursive</option>
+        <option value="Serif">Serif</option>
+        <option value="Arial">Arial</option>
+        
+    </select>
+</div>
+
+</div>
+</nav>
+
+
+<div class="todo">
+
+    
+    <div class="containertodo">
+        <h1>To-Do List <img id="logo" src="../img/logo2.svg" height="50px" /></h1>
+       
+        <div class="input-container">
+            
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button class="add-task" onclick="addTask()">Add Task</button>
+            <button class="clear-tasks" onclick="clearTasks()">Delete All Tasks</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+  
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-center mt-auto">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <p>Copyright symbol © or the word “copyright” </p>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+</footer>
+</div>
+</div>
+<!-- Bootstrap 5 JS and Popper.js -->
+<script src="../js.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
